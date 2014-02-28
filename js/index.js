@@ -1,5 +1,6 @@
 var tpp_start_time = 1392254507;
 var update_interval = 5000;
+var timer_interval = 50;
 var api_version = 9;
 
 function ViewModel() {
@@ -127,7 +128,7 @@ function ViewModel() {
     var updateTime = function() {
         var date = new Date();
         self.time("Your UTC: " + ("0" + date.getMinutes()).slice(-2) + " :" + ("0" + date.getSeconds()).slice(-2) + " ." + ("0" + Math.floor(date.getMilliseconds() / 10)).slice(-2));
-        setTimeout(updateTime, 50);
+        setTimeout(updateTime, timer_interval);
     };
     updateTime();
     
