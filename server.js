@@ -27,6 +27,6 @@ app.use(function(req, res, next){
 	res.type('txt').send('404 - Not found');
 });
 
-var server = app.listen(8080, function() {
+var server = app.listen(process.env.PORT || 8080, function() {
 	process.stdout.write('Starting tpp-updates server on port ' + server.address().port + "\n");
 });
