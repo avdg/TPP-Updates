@@ -1,0 +1,18 @@
+{
+  "name": "TPP-Updates",
+  "description": "Twitch plays pokemon notification center",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.x"
+  },
+  "bugs": {
+    "web": "https://github.com/skapin/TPP-Updates/issues"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/skapin/TPP-Updates"
+    }
+  ],
+  "homepage": "https://github.com/skapin/TPP-Updates"
+}
