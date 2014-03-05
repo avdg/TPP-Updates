@@ -5,6 +5,11 @@ var feed = require('./www/feed.json');
 
 app.disable('x-powered-by');
 
+// Logs
+app.use(express.logger({
+	"format": ':remote-addr - - [:date] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent" - :response-time ms',
+}));
+
 // Feeds
 
 app.get('/feed.json', function(req, res) {
@@ -23,5 +28,5 @@ app.use(function(req, res, next){
 });
 
 var server = app.listen(8080, function() {
-	console.log('Starting tpp-updates server...');
+	process.stdout.write('Starting tpp-updates server on port ' + server.address().port + "\n");
 });

@@ -14,5 +14,8 @@
       "url": "https://github.com/skapin/TPP-Updates"
     }
   ],
-  "homepage": "https://github.com/skapin/TPP-Updates"
+  "homepage": "https://github.com/skapin/TPP-Updates",
+  "engines": {
+	  "node": "0.10.x"
+  }
 }
