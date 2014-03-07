@@ -6,9 +6,9 @@
     "express": "3.x"
   },
   "bugs": {
-    "web": "https://github.com/skapin/TPP-Updates/issues"
+    "url": "https://github.com/skapin/TPP-Updates/issues"
   },
-  "repositories": [
+  "repository": [
     {
       "type": "git",
       "url": "https://github.com/skapin/TPP-Updates"

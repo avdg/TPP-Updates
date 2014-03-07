@@ -3,8 +3,6 @@ var app = express();
 
 var feed = require('./www/feed.json');
 
-app.disable('x-powered-by');
-
 // Logs
 app.use(express.logger({
 	"format": ':remote-addr - - [:date] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent" - :response-time ms',
